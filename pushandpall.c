@@ -30,7 +30,7 @@ void _push(stack_t **head, unsigned int counter)
 			write(STDERR_FILENO, errorMsg, sizeof(errorMsg) - 1);
 			fclose(mydata.file);
 			free(mydata.content);
-			free_stack(*head);
+			freestack(*head);
 			exit(EXIT_FAILURE);
 		}
 	}
@@ -39,7 +39,7 @@ void _push(stack_t **head, unsigned int counter)
 		write(STDERR_FILENO, errorMsg, sizeof(errorMsg) - 1);
 		fclose(mydata.file);
 		free(mydata.content);
-		free_stack(*head);
+		freestack(*head);
 		exit(EXIT_FAILURE);
 	}
 
