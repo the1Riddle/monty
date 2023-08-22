@@ -72,7 +72,7 @@ void _add(stack_t **head, unsigned int counter)
 }
 
 /**
- * addqueue - add node to the tail of the stack
+ * addq - add node to the tail of the stack
  * @n: the new value to be addded
  * @head: head of the stack
  *
