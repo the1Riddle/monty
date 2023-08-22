@@ -2,6 +2,7 @@
 #define MONTY_H
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -55,5 +56,10 @@ typedef struct global
 	int lifi;
 } global;
 extern global mydata;
+
+void addnod(stack_t **head, int n);
+void freestack(stack_t *head);
+void _add(stack_t **head, unsigned int counter);
+void addq(stack_t **head, int n);
 
 #endif /* end of file */
