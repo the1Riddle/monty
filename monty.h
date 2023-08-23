@@ -62,11 +62,13 @@ void addnod(stack_t **head, int n);
 void freestack(stack_t *head);
 void _add(stack_t **head, unsigned int counter);
 void addq(stack_t **head, int n);
+void _swap(stack_t **head, unsigned int counter);
 int main(int argc, char *argv[]);
 void f_pop(stack_t **head, unsigned int counter);
 void f_pint(stack_t **head, unsigned int counter);
 void _push(stack_t **head, unsigned int counter);
 void _pall(stack_t **head, unsigned int counter);
+void _nop(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 extern data_s mydata;
 
