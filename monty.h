@@ -50,13 +50,13 @@ typedef struct instruction_s
  *
  * Description: carries values through the program
  */
-typedef struct global
+typedef struct data_s
 {
 	char *arg;
 	FILE *file;
 	char *content;
 	int lifi;
-} global;
+} data_s;
 
 void addnod(stack_t **head, int n);
 void freestack(stack_t *head);
@@ -68,6 +68,6 @@ void f_pint(stack_t **head, unsigned int counter);
 void _push(stack_t **head, unsigned int counter);
 void _pall(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-extern global mydata;
+extern data_s mydata;
 
 #endif /* end of file */
