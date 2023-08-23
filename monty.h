@@ -10,6 +10,8 @@
 #include <fcntl.h>
 #include <ctype.h>
 
+#define MAX_LINE_SIZE 1024
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -55,11 +57,17 @@ typedef struct global
 	char *content;
 	int lifi;
 } global;
-extern global mydata;
 
 void addnod(stack_t **head, int n);
 void freestack(stack_t *head);
 void _add(stack_t **head, unsigned int counter);
 void addq(stack_t **head, int n);
+int main(int argc, char *argv[]);
+void f_pop(stack_t **head, unsigned int counter);
+void f_pint(stack_t **head, unsigned int counter);
+void _push(stack_t **head, unsigned int counter);
+void _pall(stack_t **head, unsigned int counter);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+extern global mydata;
 
 #endif /* end of file */
