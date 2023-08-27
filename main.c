@@ -43,6 +43,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	return (1);
 }
 
+data_s mydata;
 /**
  * main - the entry point.
  * @argc: number of arguments
@@ -52,7 +53,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
  */
 
 int main(int argc, char *argv[])
-{	
+{
 	char buffer[MAX_LINE_SIZE];
 	FILE *file;
 	stack_t *stack = NULL;
