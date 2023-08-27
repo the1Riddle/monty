@@ -52,17 +52,12 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
  */
 
 int main(int argc, char *argv[])
-{
-	data_s mydata;
+{	
 	char buffer[MAX_LINE_SIZE];
 	FILE *file;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
 
-	mydata.arg = NULL;
-        mydata.file = NULL;
-        mydata.content = NULL;
-        mydata.lifi = 0;
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
