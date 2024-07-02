@@ -5,5 +5,5 @@ writen in C languege.
 
 ## The AUTHORS
 
-* [Elvis Otieno](https://github.com/elvismalsa)
+* [Elvis Otieno](https://github.com/the1Riddle)
 * [Hezekiah Mokwenyei](https://github.com/Hezethegamer)
