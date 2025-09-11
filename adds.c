@@ -85,11 +85,14 @@ void addq(stack_t **head, int n)
 
 	hold = *head;
 	new_node = malloc(sizeof(stack_t));
+	
 	if (new_node == NULL)
 	{
-		write(2, "Error\n", strlen("Error\n"));
+	    write(2, "Error\n", strlen("Error\n"));
+	    exit(EXIT_FAILURE);
 	}
 	new_node->n = n;
+	
 	new_node->next = NULL;
 	if (hold)
 	{
