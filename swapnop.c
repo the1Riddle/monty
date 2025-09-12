@@ -20,7 +20,7 @@ void _swap(stack_t **head, unsigned int counter)
 	/* checking if there are enough elements to perform the swap */
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", counter);
+		fprintf(stderr, "L%u: can't swap, stack too short\n", counter);
 		fclose(mydata.file);
 		free(mydata.content);
 		freestack(*head);
