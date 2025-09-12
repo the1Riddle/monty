@@ -11,7 +11,7 @@ void f_pop(stack_t **head, unsigned int counter)
 
 	if (*head == NULL)
 	{
-		fprintf(stderr, "L%d: can't pop an empty stack\n", counter);
+		fprintf(stderr, "L%u: can't pop an empty stack\n", counter);
 		fclose(mydata.file);
 		free(mydata.content);
 		freestack(*head);
